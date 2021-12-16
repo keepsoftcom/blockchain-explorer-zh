@@ -16,15 +16,16 @@ cd $GO_PATHsrc/github.com/hyperledger
 git clone https://github.com/hyperledger/fabric.git
 
 cd ./fabric
-git branch -a
-git checkout v2.3.0
+git fetch --tags
+git checkout tags/v2.3.3 -b v2.3.3
 ```
 
 ## Get fabric-samples
 ### automatically clone source repo and pull binaries and docker images
+The version relationship refer `hyperledger/fabric/vx.y.z/scripts/bootstrap.sh`
 ```bash
 cd ./fabric/scripts
-./bootstrap.sh 2.3.0 1.4.9 0.4.18
+./bootstrap.sh 2.3.3 1.5.2
 # or execute default: ./bootstrap.sh
 ```
 ### manually clone
