@@ -165,8 +165,7 @@ export class LandingPage extends Component {
 					}}
 				>
 					<h1>
-						Please verify your network configuration, database configuration and try
-						again
+						请检查网络配置、数据库配置后重试
 					</h1>
 				</div>
 			);
@@ -178,13 +177,13 @@ export class LandingPage extends Component {
 					<img src={Logo} style={logoStyle} alt="Hyperledger Logo" />
 					<Slider {...settings}>
 						<div>
-							<h3>ACCESSING THE NETWORK</h3>
+							<h3>接入网络</h3>
 						</div>
 						<div>
-							<h3>CONNECTING TO CHANNEL</h3>
+							<h3>连接通道</h3>
 						</div>
 						<div>
-							<h3>LOADING BLOCKS</h3>
+							<h3>加载区块</h3>
 						</div>
 					</Slider>
 				</div>

@@ -30,10 +30,10 @@ const FooterView = ({ classes }) => (
 	<div className={classes.root}>
 		<div>
 			<div className={classes.footer}>
-				{'Hyperledger Explorer Client Version: '}
+				{'区块链浏览器版本: '}
 				{clientJson.version}
 				&emsp;
-				{'Fabric Compatibility: '} {FabricVersion.map(v => v)}
+				{'Fabric兼容性: '} {FabricVersion.map(v => v)}
 			</div>
 		</div>
 	</div>

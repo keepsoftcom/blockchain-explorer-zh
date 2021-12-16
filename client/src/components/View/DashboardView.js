@@ -192,7 +192,7 @@ export class DashboardView extends Component {
 											<h1 className={classes.count}>{dashStats.latestBlock}</h1>
 										</Col>
 									</Row>
-									BLOCKS
+									区块
 								</div>
 								<div className={`${classes.statistic} ${classes.vdivide}`}>
 									<Row>
@@ -205,7 +205,7 @@ export class DashboardView extends Component {
 											<h1 className={classes.count}>{dashStats.txCount}</h1>
 										</Col>
 									</Row>
-									TRANSACTIONS
+									交易
 								</div>
 								<div className={`${classes.statistic} ${classes.vdivide}`}>
 									<Row>
@@ -218,7 +218,7 @@ export class DashboardView extends Component {
 											<h1 className={classes.count}>{dashStats.peerCount}</h1>
 										</Col>
 									</Row>
-									NODES
+									节点
 								</div>
 								<div className={classes.statistic}>
 									<Row>
@@ -231,7 +231,7 @@ export class DashboardView extends Component {
 											<h1 className={classes.count}>{dashStats.chaincodeCount}</h1>
 										</Col>
 									</Row>
-									CHAINCODES
+									链码
 								</div>
 							</Card>
 						</Col>
@@ -253,7 +253,7 @@ export class DashboardView extends Component {
 								<ChartStats />
 							</Card>
 							<Card className={`${classes.section} ${classes.center}`}>
-								<h5>Transactions by Organization</h5>
+								<h5>机构交易数</h5>
 								<hr />
 								<OrgPieChart transactionByOrg={transactionByOrg} />
 							</Card>

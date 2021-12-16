@@ -10,10 +10,14 @@ import FontAwesome from 'react-fontawesome';
 import Typography from '@material-ui/core/Typography';
 import { Badge } from 'reactstrap';
 import Timeago from 'react-timeago';
+import zhCN from 'react-timeago/lib/language-strings/zh-CN';
+import buildFormatter from 'react-timeago/lib/formatters/buildFormatter';
 import find from 'lodash/find';
 import BlockView from '../View/BlockView';
 import blockOpen from '../../static/images/blockOpen.png';
 import { blockListType, notificationsType } from '../types';
+
+const formatter = buildFormatter(zhCN)
 
 /* istanbul ignore next */
 const styles = theme => {
@@ -106,10 +110,10 @@ export class TimelineStream extends Component {
 								}
 							>
 								<Typography variant="body1">
-									<b className={classes.text}> Channel Name:</b> {item.channelName}{' '}
+									<b className={classes.text}> 通道:</b> {item.channelName}{' '}
 									<br />
-									<b className={classes.text}> Datahash:</b> {item.datahash} <br />
-									<b className={classes.text}> Number of Tx:</b> {item.txcount}
+									<b className={classes.text}> 数据哈希:</b> {item.datahash} <br />
+									<b className={classes.text}> 交易数量:</b> {item.txcount}
 								</Typography>
 								<h5 className={classes.text}>
 									<Badge className={classes.text}>
@@ -118,6 +122,7 @@ export class TimelineStream extends Component {
 											date={item.time}
 											live={false}
 											minPeriod={60}
+											formatter={formatter}
 										/>
 									</Badge>
 								</h5>

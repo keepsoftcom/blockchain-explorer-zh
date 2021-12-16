@@ -32,7 +32,7 @@ export class BlockView extends Component {
 						<Card className={modalClasses.card}>
 							<CardTitle className={modalClasses.title}>
 								<FontAwesome name="cube" />
-								Block Details
+								区块详情
 							</CardTitle>
 							<CardBody className={modalClasses.body}>
 								<span>
@@ -52,7 +52,7 @@ export class BlockView extends Component {
 						<Card className={modalClasses.card}>
 							<CardTitle className={modalClasses.title}>
 								<FontAwesome name="cube" className={classes.cubeIcon} />
-								Block Details
+								区块详情
 								<button
 									type="button"
 									onClick={this.handleClose}
@@ -65,29 +65,29 @@ export class BlockView extends Component {
 								<Table striped hover responsive className="table-striped">
 									<tbody>
 										<tr>
-											<th>Channel name:</th>
+											<th>通道:</th>
 											<td>{blockHash.channelname}</td>
 										</tr>
 										<tr>
-											<th>Block Number</th>
+											<th>区块编号</th>
 											<td>{blockHash.blocknum}</td>
 										</tr>
 										<tr>
-											<th>Created at</th>
+											<th>生成时间</th>
 											<td>{blockHash.createdt}</td>
 										</tr>
 
 										<tr>
-											<th>Number of Transactions</th>
+											<th>交易数</th>
 											<td>{blockHash.txcount}</td>
 										</tr>
 										<tr>
-											<th>Block Hash</th>
+											<th>区块哈希</th>
 											<td>
 												{blockHash.blockhash}
 												<button type="button" className={modalClasses.copyBtn}>
-													<div className={modalClasses.copy}>Copy</div>
-													<div className={modalClasses.copied}>Copied</div>
+													<div className={modalClasses.copy}>复制</div>
+													<div className={modalClasses.copied}>已复制</div>
 													<CopyToClipboard text={blockHash.blockhash}>
 														<FontAwesome name="copy" />
 													</CopyToClipboard>
@@ -95,12 +95,12 @@ export class BlockView extends Component {
 											</td>
 										</tr>
 										<tr>
-											<th>Data Hash</th>
+											<th>数据哈希</th>
 											<td>
 												{blockHash.datahash}
 												<button type="button" className={modalClasses.copyBtn}>
-													<div className={modalClasses.copy}>Copy</div>
-													<div className={modalClasses.copied}>Copied</div>
+													<div className={modalClasses.copy}>复制</div>
+													<div className={modalClasses.copied}>已复制</div>
 													<CopyToClipboard text={blockHash.datahash}>
 														<FontAwesome name="copy" />
 													</CopyToClipboard>
@@ -108,12 +108,12 @@ export class BlockView extends Component {
 											</td>
 										</tr>
 										<tr>
-											<th>Prehash</th>
+											<th>前区块哈希</th>
 											<td>
 												{blockHash.prehash}
 												<button type="button" className={modalClasses.copyBtn}>
-													<div className={modalClasses.copy}>Copy</div>
-													<div className={modalClasses.copied}>Copied</div>
+													<div className={modalClasses.copy}>复制</div>
+													<div className={modalClasses.copied}>已复制</div>
 													<CopyToClipboard text={blockHash.prehash}>
 														<FontAwesome name="copy" />
 													</CopyToClipboard>

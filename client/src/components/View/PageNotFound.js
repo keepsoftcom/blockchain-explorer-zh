@@ -40,10 +40,10 @@ export const PageNotFound = ({ classes }) => (
 			<FontAwesome name="exclamation-triangle" className={classes.errorIcon} />
 			404
 		</div>
-		<div className={classes.subHeader}> Page not found </div>
+		<div className={classes.subHeader}> 页面不存在 </div>
 		<div className={classes.content}>
 			{' '}
-			The page you are trying to access does not exist. Please check the URL
+			很抱歉，地球我们都找遍了，还是没发现您要的页面
 		</div>
 	</div>
 );

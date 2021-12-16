@@ -65,24 +65,24 @@ Add Chaincode
           <form className={classes.form}>
             <TextField
               id="file-path"
-              label="File Path"
+              label="路径"
               className={classes.textField}
               margin="normal"
             />
             <TextField
               id="chaincode-name"
-              label="Chaincode Name"
+              label="链码名称"
               className={classes.textField}
               margin="normal"
             />
             <TextField
               id="version-number"
-              label="Version Number"
+              label="版本号"
               className={classes.textField}
               margin="normal"
             />
             <Button className={classes.button}>
-Submit
+              提交
             </Button>
           </form>
         </div>

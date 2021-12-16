@@ -40,13 +40,13 @@ class ChannelForm extends Component {
         <form className={classes.container}>
           <TextField
             id="channel-name"
-            label="Name"
+            label="通道"
             className={classes.textField}
             margin="normal"
           />
           <TextField
             id="org-name"
-            label="Org Name"
+            label="机构"
             className={classes.textField}
             margin="normal"
           />
@@ -56,7 +56,7 @@ class ChannelForm extends Component {
           <TextField
             type="file"
             id="org-path"
-            label="Org Path"
+            label="机构路径"
             className={classes.fileField}
             helperText="path to org config"
             margin="normal"
@@ -64,7 +64,7 @@ class ChannelForm extends Component {
           <TextField
             type="file"
             id="channel-path"
-            label="Channel Path"
+            label="通道路径"
             className={classes.fileField}
             helperText="path to channel config"
             margin="normal"
@@ -72,7 +72,7 @@ class ChannelForm extends Component {
           <TextField
             type="file"
             id="network-path"
-            label="Network Path"
+            label="网路路径"
             className={classes.fileField}
             helperText="path to network config"
             margin="normal"

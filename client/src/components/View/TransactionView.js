@@ -83,7 +83,7 @@ export class TransactionView extends Component {
 						<div>
 							<CardTitle className={modalClasses.title}>
 								<FontAwesome name="list-alt" className={classes.listIcon} />
-								Transaction Details
+								交易详情
 								<button
 									type="button"
 									onClick={this.handleClose}
@@ -121,7 +121,7 @@ export class TransactionView extends Component {
 							<Card className={modalClasses.card}>
 								<CardTitle className={modalClasses.title}>
 									<FontAwesome name="list-alt" className={classes.listIcon} />
-									Transaction Details
+									交易详情
 									<button
 										type="button"
 										onClick={this.handleClose}
@@ -134,12 +134,12 @@ export class TransactionView extends Component {
 									<Table striped hover responsive className="table-striped">
 										<tbody>
 											<tr>
-												<th>Transaction ID:</th>
+												<th>交易编号:</th>
 												<td>
 													{transaction.txhash}
 													<button type="button" className={modalClasses.copyBtn}>
-														<div className={modalClasses.copy}>Copy</div>
-														<div className={modalClasses.copied}>Copied</div>
+														<div className={modalClasses.copy}>复制</div>
+														<div className={modalClasses.copied}>已复制</div>
 														<CopyToClipboard text={transaction.txhash}>
 															<FontAwesome name="copy" />
 														</CopyToClipboard>
@@ -147,40 +147,40 @@ export class TransactionView extends Component {
 												</td>
 											</tr>
 											<tr>
-												<th>Validation Code:</th>
+												<th>验证代码:</th>
 												<td>{transaction.validation_code}</td>
 											</tr>
 											<tr>
-												<th>Payload Proposal Hash:</th>
+												<th>载荷提议哈希:</th>
 												<td>{transaction.payload_proposal_hash}</td>
 											</tr>
 											<tr>
-												<th>Creator MSP:</th>
+												<th>创建机构:</th>
 												<td>{transaction.creator_msp_id}</td>
 											</tr>
 											<tr>
-												<th>Endorser:</th>
+												<th>背书机构:</th>
 												<td>{transaction.endorser_msp_id}</td>
 											</tr>
 											<tr>
-												<th>Chaincode Name:</th>
+												<th>链码名称:</th>
 												<td>{transaction.chaincodename}</td>
 											</tr>
 											<tr>
-												<th>Type:</th>
+												<th>交易类型:</th>
 												<td>{transaction.type}</td>
 											</tr>
 											<tr>
-												<th>Time:</th>
+												<th>创建时间:</th>
 												<td>{transaction.createdt}</td>
 											</tr>
 											<tr>
-												<th>Direct Link:</th>
+												<th>跳转连接:</th>
 												<td>
 													{directLink}
 													<button type="button" className={modalClasses.copyBtn}>
-														<div className={modalClasses.copy}>Copy</div>
-														<div className={modalClasses.copied}>Copied</div>
+														<div className={modalClasses.copy}>复制</div>
+														<div className={modalClasses.copied}>已复制</div>
 														<CopyToClipboard text={directLink}>
 															<FontAwesome name="copy" />
 														</CopyToClipboard>
@@ -188,7 +188,7 @@ export class TransactionView extends Component {
 												</td>
 											</tr>
 											<tr>
-												<th style={reads}>Reads:</th>
+												<th style={reads}>读:</th>
 												<td className={classes.JSONtree}>
 													<JSONTree
 														data={transaction.read_set}
@@ -198,7 +198,7 @@ export class TransactionView extends Component {
 												</td>
 											</tr>
 											<tr>
-												<th style={writes}>Writes:</th>
+												<th style={writes}>写:</th>
 												<td className={classes.JSONtree}>
 													<JSONTree
 														data={transaction.write_set}
@@ -222,7 +222,7 @@ export class TransactionView extends Component {
 					<div>
 						<CardTitle className={modalClasses.title}>
 							<FontAwesome name="list-alt" className={classes.listIcon} />
-							Transaction Details
+							交易详情
 							<button
 								type="button"
 								onClick={this.handleClose}

@@ -10,7 +10,7 @@ import { channelsType } from '../types';
 class Channels extends Component {
 	reactTableSetup = () => [
 		{
-			Header: 'ID',
+			Header: '编号',
 			accessor: 'id',
 			filterMethod: (filter, rows) =>
 				matchSorter(
@@ -23,7 +23,7 @@ class Channels extends Component {
 			width: 100
 		},
 		{
-			Header: 'Channel Name',
+			Header: '通道',
 			accessor: 'channelname',
 			filterMethod: (filter, rows) =>
 				matchSorter(
@@ -35,7 +35,7 @@ class Channels extends Component {
 			filterAll: true
 		},
 		{
-			Header: 'Blocks',
+			Header: '区块数',
 			accessor: 'blocks',
 			filterMethod: (filter, rows) =>
 				matchSorter(
@@ -48,7 +48,7 @@ class Channels extends Component {
 			width: 125
 		},
 		{
-			Header: 'Transactions',
+			Header: '交易数',
 			accessor: 'transactions',
 			filterMethod: (filter, rows) =>
 				matchSorter(
@@ -61,7 +61,7 @@ class Channels extends Component {
 			width: 125
 		},
 		{
-			Header: 'Timestamp',
+			Header: '时间戳',
 			accessor: 'createdat',
 			filterMethod: (filter, rows) =>
 				matchSorter(

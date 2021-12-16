@@ -47,7 +47,7 @@ class AdminPanel extends Component {
 		return (
 			<div className={classes.panel}>
 				<Typography variant="headline" className={classes.panel}>
-					<FontAwesome name="cogs" className={classes.panel} /> ADMIN PANEL
+					<FontAwesome name="cogs" className={classes.panel} /> 管理员面板
 				</Typography>
 				<Accordion className={classes.panel}>
 					<AccordionSummary
@@ -55,7 +55,7 @@ class AdminPanel extends Component {
 						className={classes.panel}
 					>
 						<Typography variant="subheading" className={classes.panel}>
-							MANAGE CHANNEL{' '}
+							管理通道{' '}
 						</Typography>
 						<Typography variant="caption" className={classes.current}>
 							{this.props.channel.currentChannel} <br />
@@ -111,7 +111,7 @@ class AdminPanel extends Component {
 						expandIcon={<ExpandMoreIcon />}
 					>
 						<Typography variant="subheading" className={classes.panel}>
-							ADD CHANNEL
+							新增通道
 						</Typography>
 					</AccordionSummary>
 					<AccordionDetails className={classes.panel}>

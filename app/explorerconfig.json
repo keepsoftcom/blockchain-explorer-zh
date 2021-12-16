@@ -2,11 +2,11 @@
 	"persistence": "postgreSQL",
 	"platforms": ["fabric"],
 	"postgreSQL": {
-		"host": "127.0.0.1",
+		"host": "192.168.2.110",
 		"port": "5432",
 		"database": "fabricexplorer",
-		"username": "hppoc",
-		"passwd": "password"
+		"username": "postgres",
+		"passwd": "postgres"
 	},
 	"sync": {
 		"type": "local",

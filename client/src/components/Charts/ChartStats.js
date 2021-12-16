@@ -85,7 +85,7 @@ export class ChartStats extends Component {
 			return {
 				datetime: moment(data.datetime)
 					.tz(moment.tz.guess())
-					.format('h:mm A'),
+					.format('HH:mm'),
 				count: data.count
 			};
 		});
@@ -126,7 +126,7 @@ export class ChartStats extends Component {
 								this.toggle('1');
 							}}
 						>
-							BLOCKS / HOUR
+							区块 / 小时
 						</NavLink>
 					</NavItem>
 					<NavItem>
@@ -138,7 +138,7 @@ export class ChartStats extends Component {
 								this.toggle('2');
 							}}
 						>
-							BLOCKS / MIN
+							区块 / 分钟
 						</NavLink>
 					</NavItem>
 					<NavItem>
@@ -150,7 +150,7 @@ export class ChartStats extends Component {
 								this.toggle('3');
 							}}
 						>
-							TX / HOUR
+							交易 / 小时
 						</NavLink>
 					</NavItem>
 					<NavItem>
@@ -162,7 +162,7 @@ export class ChartStats extends Component {
 								this.toggle('4');
 							}}
 						>
-							TX / MIN
+							交易 / 分钟
 						</NavLink>
 					</NavItem>
 				</Nav>

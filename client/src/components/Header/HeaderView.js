@@ -501,12 +501,12 @@ export class HeaderView extends Component {
 			dropdownOpen
 		} = this.state;
 		const links = [
-			{ to: '/', label: 'DASHBOARD', exact: true },
-			{ to: '/network', label: 'NETWORK' },
-			{ to: '/blocks', label: 'BLOCKS' },
-			{ to: '/transactions', label: 'TRANSACTIONS' },
-			{ to: '/chaincodes', label: 'CHAINCODES' },
-			{ to: '/channels', label: 'CHANNELS' }
+			{ to: '/', label: '控制台', exact: true },
+			{ to: '/network', label: '网络' },
+			{ to: '/blocks', label: '区块' },
+			{ to: '/transactions', label: '交易' },
+			{ to: '/chaincodes', label: '链码' },
+			{ to: '/channels', label: '通道' }
 		];
 
 		return (
@@ -549,7 +549,7 @@ export class HeaderView extends Component {
 									<Form inline>
 										<Select
 											className={classes.channel}
-											placeholder="Select Channel..."
+											placeholder="选择通道..."
 											required
 											name="form-field-name"
 											isLoading={isLoading}
@@ -596,14 +596,13 @@ export class HeaderView extends Component {
 															name="user-plus"
 															onClick={() => this.registerOpen()}
 														/>{' '}
-														User management
+														用户管理
 													</div>
 												</DropdownItem>
 												<DropdownItem divider />
 												<DropdownItem>
 													<div className={classes.logoutIcon}>
-														<FontAwesome name="sign-out" onClick={() => this.logout()} /> Sign
-														out
+														<FontAwesome name="sign-out" onClick={() => this.logout()} /> 退出
 													</div>
 												</DropdownItem>
 											</DropdownMenu>
@@ -646,7 +645,7 @@ export class HeaderView extends Component {
 							maxWidth="md"
 						>
 							<div className={classes.channelLoader}>
-								<h4>Loading Channel Details</h4>
+								<h4>加载通道详情</h4>
 								<Loader
 									type="ThreeDots"
 									color="#005069"
